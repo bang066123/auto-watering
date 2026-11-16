@@ -1,4 +1,4 @@
-# HỆ THỐNG GIÁM SÁT & ĐIỀU KHIỂN TƯỚI THÔNG MINH IOTV2
+# HỆ THỐNG GIÁM SÁT & ĐIỀU KHIỂN TƯỚI THÔNG MINH
 
 - **Nhóm thực hiện**: Nhóm 11
 - **Thành viên**: Nguyễn Thanh Bằng (B23DCCN066), Bùi Quang Anh (B23DCCN010), Hoàng Mạnh Cường (B23DCCN108)
