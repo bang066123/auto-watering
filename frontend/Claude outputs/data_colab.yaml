@@ -1,0 +1,16 @@
+# ====================================================================
+# DATASET CONFIG DÀNH RIÊNG CHO GOOGLE COLAB
+# Đường dẫn Windows "c:/ptchttm/..." không tồn tại trên Colab (Linux),
+# nên phải dùng file riêng này khi train trên đám mây.
+# ====================================================================
+
+path: /content/dataset
+train: train/images
+val: val/images
+test: test/images
+
+nc: 2
+
+names:
+  0: gun
+  1: knife

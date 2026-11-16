@@ -1,0 +1,41 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/iotv2_db?useSSL=false&serverTimezone=Asia/Ho_Chi_Minh&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&useUnicode=true
+    username: root
+    password: Cuong2005@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+
+# JWT Configuration
+jwt:
+  secret: SmartPumpFarmIoTSecretKeyForJWT2026VeryLongSecretKeyThatIsAtLeast256Bits
+  expiration: 86400000  # 24 hours in milliseconds
+
+# MQTT Configuration matching pump_controller.ino & sketch_oct27a.ino
+mqtt:
+  broker: tcp://127.0.0.1:1884
+  username: HoangManhCuong
+  password: B23DCCN108
+  client-id: iotv2-spring-backend
+  topics:
+    sensor-telemetry: nhom11/sensor/telemetry
+    device-control: nhom11/device/control
+    device-ack: nhom11/device/ack
+    rain-data: rain/data
+
+# Hardware thresholds
+pump:
+  moist-low: 50
+  moist-high: 75
+  speed-pwm: 220
+

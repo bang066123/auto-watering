@@ -1,0 +1,17 @@
+# Maven
+target/
+**/target/
+*.class
+
+# Node / Frontend
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.DS_Store
+Thumbs.db

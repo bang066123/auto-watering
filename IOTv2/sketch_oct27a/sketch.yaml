@@ -1,0 +1,4 @@
+default_profile: esp32
+profiles:
+  esp32:
+    fqbn: esp32:esp32:esp32:FlashMode=dio,FlashFreq=40,EraseFlash=all
